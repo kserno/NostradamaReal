@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_weight=".15">
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_new_game_create"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_weight=".1">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:id="@+id/etGameName"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_new_game_gamename"/>
+
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:weightSum="1"
+        android:layout_margin="16dp"
+        android:layout_weight=".6"
+        android:stretchColumns="0">
+
+        <TableRow android:layout_weight=".2">
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#666666"
+                android:textAllCaps="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="@string/activity_new_game"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#666666"
+                android:textAllCaps="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="@string/activity_new_game_player" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight=".2">
+
+            <CheckBox android:layout_height="wrap_content"
+                android:id="@+id/cbPlayerActive1"
+                android:layout_width="wrap_content"/>
+
+            <EditText android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/etPlayerName1"
+                android:minEms="18"
+                android:imeOptions="flagNoExtractUi"
+                />
+
+        </TableRow>
+
+        <TableRow android:layout_weight=".2">
+
+            <CheckBox android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/cbPlayerActive2"/>
+
+            <EditText android:layout_height="wrap_content"
+                android:id="@+id/etPlayerName2"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_width="wrap_content" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight=".2">
+
+            <CheckBox android:layout_height="wrap_content"
+                android:id="@+id/cbPlayerActive3"
+                android:layout_width="wrap_content"/>
+
+            <EditText android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:id="@+id/etPlayerName3"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight=".2">
+
+            <CheckBox android:layout_height="wrap_content"
+                android:id="@+id/cbPlayerActive4"
+                android:layout_width="wrap_content"/>
+
+            <EditText android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"
+                android:id="@+id/etPlayerName4"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight=".15">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".2"/>
+
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="5dp"
+            android:layout_weight=".6"
+            android:textColor="#ffffff"
+            android:text="@string/activity_new_game_create"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/button_rect"
+            android:layout_height="fill_parent"
+            android:id="@+id/btAddGame" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        >
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextViewNB
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/player_info_player"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="16sp"
+            android:id="@+id/hPlayer" />
+
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rect"
+            android:text="@string/add_round"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/hPlayer"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/hPlayer"
+            android:layout_alignStart="@+id/hPlayer"
+            android:id="@+id/btAddRound"
+            android:layout_alignRight="@+id/view"
+            android:layout_alignEnd="@+id/view" />
+
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Janko Hráško"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@id/hPlayer"
+            android:layout_toRightOf="@id/hPlayer"
+            android:layout_toEndOf="@id/hPlayer"
+            android:id="@+id/view" />
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextViewNB
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/player_info_rounds"
+            android:textSize="20sp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/hRounds"
+            android:layout_alignTop="@+id/btAddRound"
+            android:layout_toRightOf="@+id/btAddRound"
+            android:layout_toEndOf="@+id/btAddRound" />
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignTop="@id/hRounds"
+            android:layout_toRightOf="@id/hRounds"
+            android:layout_toEndOf="@id/hRounds" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="5dp"
+    android:layout_weight=".6"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:weightSum="1"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    >
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_weight=".6"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="1"
+        android:layout_marginBottom="16dp"
+        style="?android:buttonBarButtonStyle"
+        android:orientation="vertical"
+        >
+    -->
+      <!--  <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/btPlayerState"
+            style="?android:buttonBarButtonStyle"
+            android:layout_weight=".2"
+            android:layout_marginLeft="16dp"
+            android:text="@string/player_home_1"
+            android:gravity="left|center" />
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:id="@+id/btCredit"
+            android:text="@string/player_home_2"
+            android:gravity="left|center"
+            style="?android:buttonBarButtonStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_height="2dp"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/btAB"
+            android:text="@string/player_home_3"
+            android:gravity="left|center"
+            style="?android:buttonBarButtonStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            style="?android:buttonBarButtonStyle"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/btProperty"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:text="@string/player_home_4"
+            android:gravity="left|center"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:id="@+id/btHouse"
+            style="?android:buttonBarButtonStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_height="2dp"
+            android:text="@string/player_home_5"
+            android:gravity="left|center"
+            android:layout_weight=".2"/>
+    </LinearLayout> -->
+
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/btPlayerState"
+            android:background="@null"
+            android:layout_weight=".2"
+            android:layout_marginLeft="16dp"
+            android:text="@string/player_home_1"
+            android:gravity="left|center" />
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:id="@+id/btCredit"
+            android:text="@string/player_home_2"
+            android:gravity="left|center"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_height="2dp"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/btAB"
+            android:text="@string/player_home_3"
+            android:gravity="left|center"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/btProperty"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:text="@string/player_home_4"
+            android:gravity="left|center"
+            android:layout_weight=".2"/>
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:id="@+id/btHouse"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_height="2dp"
+            android:text="@string/player_home_5"
+            android:gravity="left|center"
+            android:layout_weight=".2"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/bg_signup_3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:weightSum="90">
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_fill3"
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_weight="10"
+            android:textStyle="bold"
+
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/custom_check_box"
+            android:checked="false"
+            android:layout_weight="10"
+            android:id="@+id/cbAgreement"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20" />
+
+        <sk.mjmgames.nostradamareal.widgets.MJMTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="28sp"
+            android:id="@+id/tvTerms"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20" />
+
+        <sk.mjmgames.nostradamareal.widgets.MJMButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_register"
+            android:id="@+id/btRegister"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_rect"
+            android:textSize="28sp"
+            android:shadowColor="#000000"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
